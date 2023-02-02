@@ -7,11 +7,12 @@ const todos: Array<Todo> = [
 ]
 
 const App: React.FC = () => {
-    return <TodoListItem todo={todos[0]}/>;
+    return (
+        <React.Fragment>
+            <TodoListItem todo={todos[0]}/>
+            <TodoListItem todo={todos[1]}/>
+        </React.Fragment>
+    );
 }
-
-// function App() {
-//     return <div>Hello World</div>;
-// }
 
 export default App;
